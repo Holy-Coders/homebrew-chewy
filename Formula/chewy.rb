@@ -3,7 +3,7 @@ class Chewy < Formula
   homepage "https://github.com/Holy-Coders/chewy"
   url "https://github.com/Holy-Coders/chewy/archive/refs/tags/v0.1.0.tar.gz"
   version "0.1.0"
-  sha256 "PLACEHOLDER"
+  sha256 "428772870a6206ad3ed4ceff2a55e9d2bc141d6df565dbabf7ae87f44d03d845"
   license "MIT"
 
   depends_on "holy-coders/chewy/sd-cpp"
