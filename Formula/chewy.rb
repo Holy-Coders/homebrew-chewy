@@ -1,9 +1,9 @@
 class Chewy < Formula
   desc "TUI for local AI image generation with Stable Diffusion and FLUX"
   homepage "https://github.com/Holy-Coders/chewy"
-  url "https://github.com/Holy-Coders/chewy/archive/refs/tags/v0.2.2.tar.gz"
-  version "0.2.2"
-  sha256 "32ddc626cba22b3199f25902c2a0ca1c7c65b5791b6cf07d106f7bec1bfcdbf5"
+  url "https://github.com/Holy-Coders/chewy/archive/refs/tags/v0.2.3.tar.gz"
+  version "0.2.3"
+  sha256 "204e492dda8ed71532388fb0ece516941499f32cedf6f346c410cd0d93f07d28"
   license "MIT"
 
   depends_on "holy-coders/chewy/sd-cpp"
@@ -17,6 +17,7 @@ class Chewy < Formula
     system "gem", "install", "lipgloss", "-v", "0.2.2", "--no-document", "--install-dir", libexec
     system "gem", "install", "bubbles", "-v", "0.1.1", "--no-document", "--install-dir", libexec
     system "gem", "install", "chunky_png", "-v", "1.4.0", "--no-document", "--install-dir", libexec
+    system "gem", "install", "base64", "--no-document", "--install-dir", libexec
 
     libexec.install "chewy.rb"
     libexec.install "Gemfile"
