@@ -1,9 +1,9 @@
 class Chewy < Formula
   desc "TUI for local AI image generation with Stable Diffusion and FLUX"
   homepage "https://github.com/Holy-Coders/chewy"
-  url "https://github.com/Holy-Coders/chewy/archive/refs/tags/v0.3.0.tar.gz"
-  version "0.3.0"
-  sha256 "afa1c726573c974198209d5c5d779c2fc9e65606602bb085c82b9db544bc4516"
+  url "https://github.com/Holy-Coders/chewy/archive/refs/tags/v0.4.0.tar.gz"
+  version "0.4.0"
+  sha256 "7797f985451d92e529fc75ceca2d2c4f434110cc4ec12ae788409ab1f2199d50"
   license "MIT"
 
   depends_on "holy-coders/chewy/sd-cpp"
@@ -22,7 +22,7 @@ class Chewy < Formula
     libexec.install "chewy.rb"
     libexec.install "Gemfile"
     libexec.install "Gemfile.lock"
-    libexec.install "logo.jpeg"
+    libexec.install "logo.png"
     libexec.install "VERSION"
 
     (bin/"chewy").write <<~BASH
@@ -36,15 +36,18 @@ class Chewy < Formula
   def caveats
     <<~EOS
 
-            ▄▄████▄▄
-          ▄██▀▄██▄▀██▄
-         ██▀▄█▀▀▀█▄▀██
-        ██ ▄▀ ▄▄▄ ▀▄ ██
-        ██ █ █▀ ▀█ █ ██
-        ██ ▀▄ ▀▄▀ ▄▀ ██
-         ██▄▀▀▄▄▄▀▀▄██
-          ▀██▄▄▄▄▄██▀
-            ▀▀████▀▀
+               ▄▄▄▄████████▄▄▄▄▄
+           ▄██▀▀▀▀▀█▄ ▀██▀▄▄██▀███▄
+         ▄██▀▀▀▀▀▄  ▀▀ ▀  ▀  ▄▀▀▀▀██▄
+        ███▀▀▀                  ▀▀▀███
+       ▄██▀▀   ▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄   ▀██▄
+      ▄█▀    ▀▀▀█████▀   ▀▀████▀▀▀   ▀█
+      ██▄█           ▀▀█▀▀▀          ▄██
+      ███▄█  ▄    ▄▄▄▄▄▄▄▄▄▄▄▀▀    ▄▄██▀
+       ▄██ ▄█                    ▄ ████
+      ▄███▀██▄▄▄             ▄   ███▀ ▀▀
+             ▀▀██ ██▄   ▄█▄▄█▀▄▄▀▀▀
+                ▀▀▀ ▀▀▀▀███▀
 
       Run `chewy` to launch the TUI.
 
