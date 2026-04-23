@@ -1,9 +1,9 @@
 class Chewy < Formula
   desc "TUI for local AI image generation with Stable Diffusion and FLUX"
   homepage "https://github.com/Holy-Coders/chewy"
-  url "https://github.com/Holy-Coders/chewy/archive/refs/tags/v0.12.2.tar.gz"
-  version "0.12.2"
-  sha256 "a76158e8b05362e87c37384bcda0c8b185d5bec2b48c7514ae449760e99e5239"
+  url "https://github.com/Holy-Coders/chewy/archive/refs/tags/v0.12.3.tar.gz"
+  version "0.12.3"
+  sha256 "a959be285231921cf9c98e93e62c475a4b496bb7aa664d4dc18ae3e89bd1b960"
   license "MIT"
 
   depends_on "holy-coders/chewy/sd-cpp"
